@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <style>
+      .attribution {
+        font-size: 13px;
+        text-align: center;
+        justify-self: flex-end;
+        color: gray;
+        margin-bottom: 10px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="header-of-list">
+        <div>
+          <h1>TODO</h1>
+        </div>
+        <div>
+          <img src="./images/icon-sun.svg" alt="" />
+        </div>
+      </section>
+      <section class="mode-colors">
+        <form action="index.html" class="todo-text">
+          <input type="checkbox" name="" id="" checked />
+          <input
+            type="text"
+            id="todo-text"
+            placeholder="Create a new todo..."
+            maxlength="32" />
+        </form>
+      </section>
+      <section class="todo-list mode-colors">
+        <div id="i"></div>
+        <div class="filter">
+          <div><span id="counter">items left</span></div>
+          <div>
+            <ul id="task-filter">
+              <li class="li-style">All</li>
+              <li class="li-style">Active</li>
+              <li class="li-style">Completed</li>
+            </ul>
+          </div>
+          <div>
+            <span id="clear-complete" class="li-style">Clear Completed</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/OmarYYasser">omar yasser</a
+      >.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
